@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fschedule"
+            android:icon="@drawable/ic_schedule_black_24dp"
+            android:title="Shedule" />
+        <item
+            android:id="@+id/nav_fattendance"
+            android:icon="@drawable/ic_check_box_black_24dp"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_fstatistics"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="Statistics" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_contacts_black_24dp"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_appinfo"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="App Info" />
+        </menu>
+    </item>
+
+</menu>

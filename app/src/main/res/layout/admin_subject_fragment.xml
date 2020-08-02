@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminsubject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.adminsubject.AdminSubjectFragment">
+
+
+    <Button
+        android:id="@+id/btnasfchoosefile"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="53dp"
+        android:text="Choose File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinasfclass" />
+
+    <Spinner
+        android:id="@+id/spinasfdept"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtasfdept"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinasfclass"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtasfyear"
+        app:layout_constraintTop_toBottomOf="@+id/spinasfdept" />
+
+    <TextView
+        android:id="@+id/txtasfdept"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Department"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtasfyear"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Class"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtasfdept" />
+
+    <TextView
+        android:id="@+id/txtasffilepath"
+        android:layout_width="380dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="51dp"
+        android:text="File Path"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnasfchoosefile" />
+
+    <Button
+        android:id="@+id/btnasfupload"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="51dp"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtasffilepath" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

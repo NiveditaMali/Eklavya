@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admintimetable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admintimetable.AdminTimetableFragment">
+
+    <Button
+        android:id="@+id/btnttchoosefile"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="53dp"
+        android:text="Choose File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinttclass" />
+
+    <Spinner
+        android:id="@+id/spinttdept"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtdept"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinttclass"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtyear"
+        app:layout_constraintTop_toBottomOf="@+id/spinttdept" />
+
+    <TextView
+        android:id="@+id/txtdept"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Department"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtyear"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Class"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdept" />
+
+    <TextView
+        android:id="@+id/txtttfilepath"
+        android:layout_width="380dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="51dp"
+        android:text="File Path"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnttchoosefile" />
+
+    <Button
+        android:id="@+id/btnttupload"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="51dp"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtttfilepath" />
+</androidx.constraintlayout.widget.ConstraintLayout>

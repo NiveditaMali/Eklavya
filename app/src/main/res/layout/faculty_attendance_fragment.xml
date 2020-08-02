@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/facultyattendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.facultyattendance.FacultyAttendanceFragment">
+
+    <TextView
+        android:id="@+id/txtheading"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Take a attendance"
+        android:textAlignment="center"
+        android:textColor="?attr/colorControlNormal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnfafsubmit"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="53dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinfafsubject" />
+
+    <Spinner
+        android:id="@+id/spinfafdept"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtfafdept"
+        app:layout_constraintTop_toBottomOf="@+id/txtheading" />
+
+    <Spinner
+        android:id="@+id/spinfafclass"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtfafyear"
+        app:layout_constraintTop_toBottomOf="@+id/spinfafdept" />
+
+    <TextView
+        android:id="@+id/txtfafdept"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:text="Department"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtheading"/>
+
+    <TextView
+        android:id="@+id/txtfafyear"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Class"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtfafdept" />
+
+    <Spinner
+        android:id="@+id/spinfafsubject"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toEndOf="@+id/txtfafsubject"
+        app:layout_constraintTop_toBottomOf="@+id/spinfafclass" />
+
+    <TextView
+        android:id="@+id/txtfafsubject"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Subject"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtfafyear" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabfaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/design_default_color_secondary_variant"
+        android:src="@android:drawable/stat_sys_download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

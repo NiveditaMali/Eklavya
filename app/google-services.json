@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "159808829124",
+    "firebase_url": "https://eklavya-3d55d.firebaseio.com",
+    "project_id": "eklavya-3d55d",
+    "storage_bucket": "eklavya-3d55d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159808829124:android:6e268eae76a32fde35fb91",
+        "android_client_info": {
+          "package_name": "com.example.eklavya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159808829124-5df26pohor9m726jaedo20ombbs7lebu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eklavya",
+            "certificate_hash": "1374af59d07ceca5709de7eef190be3a1b7bf072"
+          }
+        },
+        {
+          "client_id": "159808829124-gmjraa8pp4l2h36k576t0gqtvuu62cfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2VKCAA0HhYF3mbimCgoG6ZaMgmOsZMkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159808829124-gmjraa8pp4l2h36k576t0gqtvuu62cfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

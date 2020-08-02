@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_appinfo">
+
+    //faculty
+
+    <fragment
+        android:id="@+id/nav_fschedule"
+        android:name="com.example.eklavya.ui.facultyschedule.FacultyScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/faculty_schedule_fragment" />
+
+    <fragment
+        android:id="@+id/nav_fattendance"
+        android:name="com.example.eklavya.ui.facultyattendance.FacultyAttendanceFragment"
+        android:label="Attendance"
+        tools:layout="@layout/faculty_attendance_fragment" />
+
+    <fragment
+        android:id="@+id/nav_fstatistics"
+        android:name="com.example.eklavya.ui.fracultystatistics.FracultyStatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fraculty_statistics_fragment" />
+
+    //student
+
+    <fragment
+        android:id="@+id/nav_sschedule"
+        android:name="com.example.eklavya.ui.studentschedule.StudentScheduleFragment"
+        android:label="Schedule"
+        tools:layout="@layout/student_schedule_fragment" />
+
+    <fragment
+        android:id="@+id/nav_sattendance"
+        android:name="com.example.eklavya.ui.studentattendance.StudentAttendanceFragment"
+        android:label="Attendance"
+        tools:layout="@layout/student_attendance_fragment" />
+
+    //admin
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.example.eklavya.ui.adminusers.AdminUsersFragment"
+        android:label="Users"
+        tools:layout="@layout/admin_users_fragment" />
+
+    <fragment
+        android:id="@+id/nav_notice"
+        android:name="com.example.eklavya.ui.adminnotice.AdminNoticeFragment"
+        android:label="Notice"
+        tools:layout="@layout/admin_notice_fragment" />
+    <fragment
+        android:id="@+id/nav_timetable"
+        android:name="com.example.eklavya.ui.admintimetable.AdminTimetableFragment"
+        android:label="Timetable"
+        tools:layout="@layout/admin_timetable_fragment" />
+
+    <fragment
+        android:id="@+id/nav_subject"
+        android:name="com.example.eklavya.ui.adminsubject.AdminSubjectFragment"
+        android:label="Subject"
+        tools:layout="@layout/admin_subject_fragment" />
+
+
+    //communicate
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.example.eklavya.ui.contactus.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/contact_us_fragment" />
+
+    <fragment
+        android:id="@+id/nav_appinfo"
+        android:name="com.example.eklavya.ui.appinfo.AppInfoFragment"
+        android:label="App Info"
+        tools:layout="@layout/app_info_fragment" />
+</navigation>

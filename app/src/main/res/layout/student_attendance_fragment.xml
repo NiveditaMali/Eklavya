@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/studentattendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.studentattendance.StudentAttendanceFragment">
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/studpiechart"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Title"
+        app:layout_constraintVertical_bias="0.0"></com.github.mikephil.charting.charts.PieChart>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="329dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="Overall Attendance Of Semester"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher_filter_1_foreground"
+        app:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studpiechart"
+        app:layout_constraintVertical_bias="0.94"
+        app:maxImageSize="80dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
